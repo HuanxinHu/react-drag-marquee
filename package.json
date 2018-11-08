@@ -2,9 +2,12 @@
   "name": "react-drag-marquee",
   "version": "1.0.0",
   "description": "a draggable marquee component",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --mode development",
+    "transpile": "babel src -d dist --copy-files",
+    "prepublishOnly": "npm run transpile"
   },
   "repository": {
     "type": "git",
@@ -21,7 +24,12 @@
     "url": "https://github.com/HuanxinHu/react-drag-marquee/issues"
   },
   "homepage": "https://github.com/HuanxinHu/react-drag-marquee#readme",
+  "peerDependencies": {
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0"
+  },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
