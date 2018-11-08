@@ -11,7 +11,7 @@ npm install react-drag-marquee
 ## Demo 
 [Demo Link](https://huanxinhu.github.io/react-drag-marquee/)
 
-##Example
+## Example
 ```jsx
 import React, { Component} from 'react';
 import Marquee from 'react-drag-marquee';
@@ -27,18 +27,18 @@ class App extends Component {
 }
 ```
 
-##Props
-###text
+## Props
+### text
 the marquee text
 - Type: string
 - Default: ''
 
-###freq
+### freq
 the interval time(millisecond) for the marquee
 - Type: number
 - Default: 25
 
-###offset
+### offset
 the move offset(px) for every interval time.
 - Type: number
 - Default: 3
