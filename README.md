@@ -31,14 +31,14 @@ class App extends Component {
 ### text
 the marquee text
 - Type: string
-- Default: ''
+- Default: `''`
 
 ### freq
 the interval time(millisecond) for the marquee
 - Type: number
-- Default: 25
+- Default: `25`
 
 ### offset
 the move offset(px) for every interval time.
 - Type: number
-- Default: 3
+- Default: `3`
