@@ -7,12 +7,6 @@ class Marquee extends Component {
     super(props);
     this.dragSpan         = React.createRef();
     this.scrollTimer      = null;
-    this.move             = this.move.bind(this);
-    this.handleMouseEnter = this.handleMouseEnter.bind(this);
-    this.handMouseLeave   = this.handMouseLeave.bind(this);
-    this.handleMouseDown  = this.handleMouseDown.bind(this);
-    this.handleMouseUp    = this.handleMouseUp.bind(this);
-    this.handleDrag       = this.handleDrag.bind(this);
     this.state = {
       left: window.innerWidth,
       isDraging: false
@@ -35,7 +29,7 @@ class Marquee extends Component {
     this.scrollTimer = setInterval(this.move, freq);
   }
 
-  move() {
+  move = () => {
     const { offset = 3 } = this.props;
     let left = this.state.left - offset;
     if (left < -this.spanWidth) {
@@ -44,30 +38,30 @@ class Marquee extends Component {
     this.setState({ left });
   }
 
-  handleMouseEnter() {
+  handleMouseEnter = () => {
     clearInterval(this.scrollTimer);
   }
 
-  handMouseLeave() {
+  handMouseLeave = () => {
     const { freq = 25 } = this.props;
     this.scrollTimer = setInterval(this.move, freq);
     this.setState({ isDraging: false})
   }
 
-  handleDrag(e) {
+  handleDrag = (e) => {
     this.prePageX = this.currentPageX
     this.currentPageX = e.pageX;
     const left = this.state.left + (this.currentPageX - this.prePageX);
     this.setState({ left });
   }
 
-  handleMouseDown(e) {
+  handleMouseDown = (e) => {
     this.setState({ isDraging: true});
     this.prePageX = e.pageX;
     this.currentPageX = this.prePageX;
   }
 
-  handleMouseUp(e) {
+  handleMouseUp = (e) => {
     this.setState({ isDraging: false})
   }
 
