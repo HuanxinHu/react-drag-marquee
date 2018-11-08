@@ -1,3 +1,15 @@
-h1 {
-  color: red;
+.marquee-container {
+  cursor: all-scroll;
+  color:white;
+  background:#333;
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.drag-span {
+  line-height: 50px;
+  height: 50px;
+  left: 100%;
+  position: relative;
 }
