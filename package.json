@@ -1,6 +1,6 @@
 {
   "name": "react-drag-marquee",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "a draggable marquee component",
   "main": "dist/index.js",
   "scripts": {

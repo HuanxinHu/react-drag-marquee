@@ -72,7 +72,7 @@ class Marquee extends Component {
   }
 
   render() {
-    const { text } = this.props;
+    const { text = '' } = this.props;
     const handleDrag = this.state.isDraging ? this.handleDrag : null;
     return (
       <div className="marquee-container"
