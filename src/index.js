@@ -5,8 +5,8 @@ class Marquee extends Component {
 
   constructor(props) {
     super(props);
-    this.dragSpan         = React.createRef();
-    this.scrollTimer      = null;
+    this.dragSpan = React.createRef();
+    this.scrollTimer = null;
     this.state = {
       left: window.innerWidth,
       isDraging: false
