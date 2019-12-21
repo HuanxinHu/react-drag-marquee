@@ -19,7 +19,7 @@ class Marquee extends Component {
     };
 
     this.handMouseLeave = () => {
-      const { freq = 25 } = this.props;
+      const { freq = 15 } = this.props;
       this.scrollTimer = setInterval(this.move, freq);
       this.setState({ isDraging: false });
     };
@@ -58,7 +58,7 @@ class Marquee extends Component {
   }
 
   initMarquee() {
-    const { freq = 25 } = this.props;
+    const { freq = 15 } = this.props;
     let spanWidth = this.dragSpan.current.getBoundingClientRect().width;
     const windowWidth = window.innerWidth;
     this.spanWidth = Math.max(spanWidth, windowWidth);
