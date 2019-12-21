@@ -1,6 +1,6 @@
 {
   "name": "react-drag-marquee",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "a draggable marquee component",
   "main": "dist/index.js",
   "scripts": {
@@ -28,8 +28,8 @@
   },
   "homepage": "https://github.com/HuanxinHu/react-drag-marquee#readme",
   "peerDependencies": {
-    "react": "^16.6.0",
-    "react-dom": "^16.6.0"
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -37,14 +37,14 @@
     "babel-loader": "^7.1.4",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
-    "css-loader": "^1.0.1",
-    "gh-pages": "^2.0.1",
+    "css-loader": "^3.4.0",
+    "gh-pages": "^2.1.1",
     "html-webpack-plugin": "^3.2.0",
-    "react": "^16.6.1",
-    "react-dom": "^16.6.1",
-    "style-loader": "^0.23.1",
-    "webpack": "^4.25.1",
-    "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.10"
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "style-loader": "^1.1.1",
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
   }
 }

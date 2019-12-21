@@ -1,13 +1,12 @@
-import React, { Component } from 'react';
-import './styles.css';
+import React, { Component } from "react";
+import "./styles.css";
 
 class Marquee extends Component {
-
   constructor(props) {
     super(props);
 
     this.move = () => {
-      const { offset = 3 } = this.props;
+      const { offset = 1 } = this.props;
       let left = this.state.left - offset;
       if (left < -this.spanWidth) {
         left = window.innerWidth;
@@ -67,11 +66,12 @@ class Marquee extends Component {
   }
 
   render() {
-    const { text = '' } = this.props;
+    const { text = "" } = this.props;
     const handleDrag = this.state.isDraging ? this.handleDrag : null;
     return React.createElement(
-      'div',
-      { className: 'marquee-container',
+      "div",
+      {
+        className: "marquee-container",
         onMouseEnter: this.handleMouseEnter,
         onMouseLeave: this.handMouseLeave,
         onMouseDown: this.handleMouseDown,
@@ -79,10 +79,10 @@ class Marquee extends Component {
         onMouseMove: handleDrag
       },
       React.createElement(
-        'div',
-        { className: 'drag-span', style: { left: this.state.left } },
+        "div",
+        { className: "drag-span", style: { left: this.state.left } },
         React.createElement(
-          'span',
+          "span",
           { ref: this.dragSpan },
           text
         )

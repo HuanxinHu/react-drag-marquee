@@ -36,9 +36,9 @@ the marquee text
 ### freq
 the interval time(millisecond) for the marquee
 - Type: number
-- Default: `25`
+- Default: `15`
 
 ### offset
 the move offset(px) for every interval time.
 - Type: number
-- Default: `3`
+- Default: `1`
