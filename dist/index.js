@@ -81,11 +81,10 @@ class Marquee extends Component {
       React.createElement(
         "div",
         { className: "drag-span", style: { left: this.state.left } },
-        React.createElement(
-          "span",
-          { ref: this.dragSpan },
-          text
-        )
+        React.createElement("span", {
+          ref: this.dragSpan,
+          dangerouslySetInnerHTML: { __html: text }
+        })
       )
     );
   }
