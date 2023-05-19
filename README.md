@@ -20,7 +20,7 @@ class App extends Component {
   render() {
     return (
       <Marquee
-        text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui ea laboriosam molestiae corrupti eligendi sed error dolore consequuntur maxime saepe. Nam corrupti velit autem incidunt, aut atque mollitia ipsa obcaecati."
+        text="<em>Lorem ipsum dolor sit amet,</em> <strong>consectetur adipisicing elit. Qui ea laboriosam molestiae corrupti eligendi sed error dolore consequuntur maxime saepe. Nam corrupti velit autem incidunt,</strong> aut atque mollitia ipsa obcaecati."
       />
     )
   }
@@ -29,7 +29,7 @@ class App extends Component {
 
 ## Props
 ### text
-the marquee text
+the marquee text, can include HTML tags
 - Type: string
 - Default: `''`
 
@@ -42,3 +42,7 @@ the interval time(millisecond) for the marquee
 the move offset(px) for every interval time.
 - Type: number
 - Default: `1`
+
+### todo
+
+- add infinite scroll feature
