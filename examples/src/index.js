@@ -4,7 +4,7 @@ import Marquee from '../../src/index';
 
 const App = () => (
   <Marquee
-    text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui ea laboriosam molestiae corrupti eligendi sed error dolore consequuntur maxime saepe. Nam corrupti velit autem incidunt, aut atque mollitia ipsa obcaecati."
+    text="<strong>Lorem ipsum</strong> <em>dolor sit amet,</em> <u>consectetur adipisicing elit.</u> <s>Qui ea laboriosam molestiae corrupti eligendi sed error dolore consequuntur maxime saepe.</s>"
   />
 )
 

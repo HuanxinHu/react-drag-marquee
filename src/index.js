@@ -77,7 +77,10 @@ class Marquee extends Component {
         onMouseMove={handleDrag}
       >
         <div className="drag-span" style={{ left: this.state.left }}>
-          <span ref={this.dragSpan}>{text}</span>
+          <span
+              ref={this.dragSpan}
+              dangerouslySetInnerHTML={{__html: text}}
+          />
         </div>
       </div>
     );
